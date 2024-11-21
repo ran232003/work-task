@@ -1,0 +1,114 @@
+.headline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  margin-bottom: 40px;
+}
+.custom-toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  text-align: center;
+  z-index: 1000;
+  font-size: 16px;
+  transition: bottom 0.5s ease-in-out;
+}
+
+.success {
+  background-color: #5cb85c;
+  color: white;
+}
+
+.error {
+  background-color: #d9534f;
+  color: white;
+}
+.toast-body-text {
+  color: aliceblue;
+}
+.nav-profile {
+  margin-right: 10px;
+}
+.nav-profile .dropdown-toggle::after {
+  display: none !important;
+}
+.homePageTitle {
+  /* border: #5cb85c solid 2px; */
+  width: 60%;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+.homePageSubTitleClass {
+  color: rgb(57, 57, 56);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  margin-bottom: 40px;
+}
+.homePageTitleClass {
+  color: rgb(81, 81, 60);
+}
+.auth-page {
+  /* margin-right: auto; */
+  margin-right: 50px;
+}
+.my-nav-link {
+  cursor: pointer;
+  border-radius: 20px;
+  /* border: #5cb85c solid 2px; */
+}
+:hover.my-nav-link {
+  background-color: #5cb85c;
+  transition: all 1s ease;
+}
+.my-nav {
+  border-bottom: #e8e3e2 1px solid;
+}
+.create-post-head {
+  margin-top: 40px;
+}
+.recent-post-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.submit-button {
+  width: calc(
+    100% - 80px
+  ); /* Width of the input field, same as dropdown and input, minus label width */
+  margin-left: 10px; /* Align with the input fields and dropdowns */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+.form-group select {
+  -webkit-appearance: none; /* Remove default arrow on Chrome, Safari, Edge */
+  -moz-appearance: none; /* Remove default arrow on Firefox */
+  appearance: none;
+  background-color: white; /* Adjust background as needed */
+  padding-right: 30px; /* Space for the custom arrow */
+  position: relative;
+}
+
+/* Add the custom arrow */
+.form-group select::after {
+  content: "▼"; /* Unicode for a down arrow */
+  position: absolute;
+  right: 10px; /* Adjust position */
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* Prevent arrow from blocking clicks */
+  color: #6c757d; /* Match Bootstrap's default color for form controls */
+}

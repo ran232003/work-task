@@ -1,0 +1,90 @@
+.task-details-container {
+  flex: 1; /* Take the remaining space */
+  padding: 20px;
+  background-color: #f9f9f9;
+  overflow-y: auto;
+}
+
+/* Task number styles */
+.task-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Task summary styles */
+.task-summary-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: red;
+  margin-bottom: 1rem;
+}
+
+/* Task actions */
+.task-actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-action-button {
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.task-select {
+  width: 200px;
+}
+
+/* Description section */
+.task-description {
+  margin-bottom: 20px;
+}
+
+.description-content {
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Attachments section */
+.task-attachments h4 {
+  margin-bottom: 10px;
+}
+
+.no-task-selected {
+  text-align: center;
+  color: #888;
+}
+.dashboard-container {
+  display: flex;
+  height: 100vh; /* Full height */
+}
+.attachments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.attachment-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.file-icon {
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+.attachment-item a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.attachment-item a:hover {
+  text-decoration: underline;
+}

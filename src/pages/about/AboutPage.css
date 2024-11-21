@@ -1,0 +1,20 @@
+/* AboutPage.css */
+
+.about-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.about-headline {
+  font-size: 28px;
+  color: #333; /* Adjust the color to your preference */
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666; /* Adjust the color to your preference */
+  margin-bottom: 20px;
+}

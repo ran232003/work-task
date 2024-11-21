@@ -1,0 +1,55 @@
+/* TaskModal.css */
+.modal-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.datepicker-container {
+  display: flex;
+  align-items: center;
+}
+
+.datepicker-container input {
+  width: 100%;
+}
+
+button {
+  margin-left: 5px;
+}
+.form-group .ql-container {
+  height: 150px; /* Adjust the height here */
+  max-height: 150px;
+  overflow-y: auto; /* Enable scroll if content exceeds height */
+}
+
+/* Ensure the editor area fills the container's height */
+.form-group .ql-editor {
+  height: 100%;
+  overflow-y: auto;
+}
+.attachments-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.attachment-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.remove-attachment {
+  color: red;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.remove-attachment:hover {
+  color: darkred;
+}

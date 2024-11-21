@@ -1,0 +1,75 @@
+/* TaskSidebar.css */
+
+/* Ensure sidebar takes full height of the viewport */
+.sidebar {
+  height: 100vh; /* Full height of the page */
+  width: 250px; /* Sidebar width */
+  overflow-y: auto; /* Enable scrolling if content overflows */
+}
+
+/* Style for each task item */
+
+/* Style for the icon and task details container */
+.task-details {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.task-number {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.task-summary {
+  font-size: 0.8rem;
+  /* color: #aaa; Light gray for contrast */
+}
+/* Task item styling */
+.task-item {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 0;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer; /* Changes cursor to pointer on hover for better UX */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Highlight entire task-item on hover */
+.task-item:hover {
+  background-color: rgba(242, 144, 144, 0.1) !important;
+}
+.task-summary {
+  font-size: 0.8rem;
+  background-color: transparent; /* Explicitly set transparent */
+}
+
+.task-summary:hover {
+  background-color: transparent; /* Override any inherited hover background */
+}
+/* a:hover {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.css-1t8x7v1 > .ps-menu-button:hover {
+  border-bottom: 1px solid rgba(246, 142, 142, 0.2);
+} */
+.my-sidebar .ps-menu-button:hover {
+  background-color: transparent !important; /* Removes any hover background */
+  border-bottom: none; /* Remove unwanted borders */
+}
+.ps-menu-button:hover {
+  background-color: transparent !important; /* Removes any hover background */
+  border-bottom: none !important;
+}
+/* Highlight the selected task */
+.selected-task {
+  background-color: rgba(242, 144, 144, 0.2); /* Adjust to preferred color */
+  border-left: 4px solid rgba(242, 144, 144, 1); /* Optional: Highlight with a border */
+}
+
+/* Ensure hover effect doesn't override the selected state */
+.selected-task:hover {
+  background-color: rgba(242, 144, 144, 0.3); /* Slightly darker for hover */
+}
